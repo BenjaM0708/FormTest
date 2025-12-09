@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MarvelGeek</title>
+    <title>Arepa's Order</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title" class="text-center">MarvelGeek</h1>
-    <p id="description">
-      Hello!!! We want to know how much you know about Marvel
+    <h1 id="title" class="text-center">Arepa's</h1>
+    <p id="description" class="text-center">
+      Hello!!! Thank you for choosing us. We hope you can enjoy your Arepa, but
+      first, let's cook it together.
     </p>
     <form id="survey-form">
       <label id="name-label"
@@ -35,11 +36,74 @@
         >Age:
         <input
           type="number"
+          id="number"
           placeholder="age"
           min="0"
           max="80"
           required /></label
-      ><br /><br />
+      ><br />
+      <label id="phone-label"
+        >Phone:
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your number"
+          required /></label
+      ><br />
+      <label
+        >Filling Flavor:
+        <select name="Flavor" id="dropdown" required>
+          <option value="" disabled selected>Choose One</option>
+          <option value="meat">Meat</option>
+          <option value="cheese">Cheese</option>
+          <option value="perico">Perico</option>
+          <option value="meat-cheese">Meat and Cheese</option>
+          <option value="llanera">Llanera</option>
+          <option value="domino">Dominó</option>
+          <option value="chicken">Chicken</option>
+          <option value="chorizo">Chorizo</option>
+          <option value="reina-pepiada">Reina Pepiada</option>
+          <option value="pabellon">Pabellón</option>
+        </select></label
+      >
+      <br />
+      <p>Type of Corn:</p>
+      <br />
+      <label>
+        White Corn
+        <input type="radio" name="corn" value="white-corn" required />
+      </label>
+      <label>
+        Pelado Corn
+        <input type="radio" name="corn" value="pelado-corn" required />
+      </label>
+      <label>
+        Yellow Corn
+        <input type="radio" name="corn" value="yellow-corn" required />
+      </label>
+      <label>
+        Chicharrón Corn
+        <input type="radio" name="corn" value="chicharron-corn" required />
+      </label>
+      <label>
+        Andina (Wheat)
+        <input type="radio" name="corn" value="andina" required /> </label
+      ><br />
+      <p>Toppings:</p>
+      <br />
+      <label>Cheese <input type="checkbox" value="cheese" /> </label>
+      <label>Bacon <input type="checkbox" value="bacon" /> </label>
+      <label>Beans <input type="checkbox" value="beans" /> </label>
+      <label>Avocato <input type="checkbox" value="avocato" /> </label>
+      <label>Tajadas <input type="checkbox" value="tajadas" /> </label>
+      <label>Fried Egg <input type="checkbox" value="fried-egg" /> </label>
+      <br />
+      <label
+        >Aditional Comments<br />
+        <textarea rows="5" cols="50" name="comments"> </textarea></label
+      ><br />
+      <label><input type="submit" value="Order" id="submit" /></label>
     </form>
   </body>
 </html>
